@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\cross.png" />
+    <None Remove="assets\run.png" />
+    <None Remove="assets\selectall.png" />
+    <None Remove="assets\toggle.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\cross.png" />
+    <Resource Include="assets\run.png" />
+    <Resource Include="assets\selectall.png" />
+    <Resource Include="assets\toggle.png" />
+  </ItemGroup>
+
+</Project>
